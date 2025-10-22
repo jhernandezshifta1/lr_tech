@@ -1,0 +1,35 @@
+$sm-breakpoint: 621px;
+$md-breakpoint: 769px;
+$lg-breakpoint: 1200px;
+
+
+@mixin sm {
+  @media screen and (max-width: #{$sm-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: #{$sm-breakpoint}) and (max-width: #{$md-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: #{$md-breakpoint}) and (max-width: #{$lg-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm-md {
+  @media screen and (max-width: #{$md-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin media-queries {
+    @include sm;
+    @include md;
+    @include lg;
+}

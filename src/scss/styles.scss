@@ -1,0 +1,22 @@
+@use "./base/base" as base;
+@use "./base/resets" as rts;
+@use "./layout/header" as header;
+@use "./abstracts/variables" as vars;
+@use "./components/opening" as opening;
+@use "./components/team" as team;
+@use "./components/products" as prods;
+@use "./components/benefits" as ben;
+@use "./components/customers" as cus;
+@use "./components/technologies" as tech;
+@use "./components/contact" as contact;
+@use "./layout/footer" as footer;
+
+@include header.header_home;
+@include opening.opening_home;
+@include team.team_home;
+@include prods.products_home;
+@include ben.benefits_home;
+@include cus.customers_home;
+@include tech.technologies_home;
+@include contact.contact_home;
+@include footer.footer_home;

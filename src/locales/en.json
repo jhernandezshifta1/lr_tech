@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "opening": {
+    "title": "Digital transformation is not the future it’s the present.",
+    "paragraph": "Join LR TECH and gain access to tools, knowledge, and technology services that will take your company to the next level."
+  },
+  "team": {
+    "title": "What is the team",
+    "paragraph": "Join LR TECH and access tools, knowledge, and technological services that will take your business to the next level."
+  },
+  "team-box": {
+    "title": "Diario La República",
+    "paragraph": "Es el primer diario económico del país, especializado en información económica, financiera y empresarial, con información local e internacional. <br>Este medio agrupa varias unidades de negocio entre estos LR TECH, que ofrecen productos y servicios a empresas."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

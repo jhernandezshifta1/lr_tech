@@ -1,0 +1,19 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "opening": {
+    "title": "La transformación digital no es el futuro, es el presente.",
+    "paragraph": "Fue creado en el 2017 con el objetivo de mostrar soluciones a aquellas empresas que quieren una plataforma robusta, escalable y de alta disponibilidad, alineada con los últimos estándares para sitios informativos."
+  },
+  "team": {
+    "title": "¿Qué es el equipo",
+    "paragraph": "Únete a LR TECH y accede a herramientas, conocimiento y servicios tecnológicos que llevarán a tu empresa al siguiente nivel."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

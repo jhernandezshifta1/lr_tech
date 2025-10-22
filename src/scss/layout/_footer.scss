@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+@use "../base/mixins" as mix; // importa otros mixins generales
+@use "../abstracts/media" as media;
+
+@mixin footer_home {
+  footer {
+    background: var(--blue-dark);
+    margin-top: 3rem;
+
+    .f-info {
+      @include mix.flex-center;
+      justify-content: space-between;
+      color: var(--white);
+      padding: 1.5rem 0;
+
+      @include media.sm {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .logo-white img {
+        width: 40px;
+      }
+
+      .phone,
+      .address {
+        @include mix.flex-center;
+        gap: 2.5rem;
+
+        &:after {
+          content: "";
+          background: var(--white);
+          width: 5px;
+          height: 5px;
+
+          @include media.sm {
+            content: none;
+          }
+        }
+      }
+
+
+      & a {
+        text-decoration: none;
+        color: var(--white);
+
+        &:hover {
+          color: var(--blue-light);
+        }
+      }
+
+    }
+
+  }
+}

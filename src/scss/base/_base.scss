@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* body - Define variables globales del contenido visible */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  display: block;
+}
+
+/* img - Define propiedades de las imágenes */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* formateo estilos de los textos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* clamp*/
+h1 {
+  font-size: clamp(3rem, 4vw + 1rem, 2rem);
+}
+
+h2 {
+  font-size: clamp(2.1rem, 4vw + 0.9rem, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 2vw, 1.563rem);
+}
+
+p,
+li {
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+}

@@ -1,0 +1,106 @@
+@use "../abstracts/variables" as vars;
+@use "../base/buttons" as btns; // importa mixins de botones
+@use "../abstracts/media" as media;
+
+@mixin products_home {
+  .products {
+    background-color: var(--blue-white);
+    padding: 3.125rem 0;
+
+    @include media.sm {
+      padding: 1rem 0;
+    }
+
+    .products-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 5.125rem;
+
+      @include media.sm-md {
+        gap: 2rem;
+      }
+
+      div {
+        h2 {
+          color: var(--red);
+          margin-bottom: 1rem;
+        }
+
+      }
+
+      .product-01 {
+        display: flex;
+        gap: 3.125rem;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media.md {
+          gap: 2rem;
+        }
+
+        @include media.sm {
+          gap: 2rem;
+          flex-direction: column;
+        }
+
+        img {
+          width: 56%;
+          border-radius: 1rem;
+          object-fit: cover;
+
+          @include media.sm {
+            width: 100%;
+          }
+        }
+
+        .product-txt {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.25rem;
+
+          h3 {
+            color: var(--blue-dark);
+            font-size: 1.5rem;
+          }
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+
+            li {
+              line-height: 1.8;
+
+              @include media.sm {
+                line-height: 1.4;
+              }
+
+              &::before {
+                content: "✓";
+                color: var(--red);
+                font-weight: bold;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+
+        /*row-reverse*/
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          flex-direction: row-reverse;
+
+          @include media.sm {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

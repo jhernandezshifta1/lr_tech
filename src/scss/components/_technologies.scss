@@ -1,0 +1,144 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+@use "../abstracts/media" as media;
+
+@mixin technologies_home {
+  .technologies {
+    background: linear-gradient(180deg, #FFFFFF 0%, #EAF1FF 100%);
+    text-align: center;
+    padding: 3.125rem 0;
+
+    @include media.sm-md {
+      padding: 2rem 0;
+    }
+
+    .tech-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+      align-items: center;
+
+      @include media.sm {
+        gap: 2rem;
+      }
+
+      h2 {
+        color: var(--blue-dark);
+      }
+
+      .box-tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--blue-white);
+        gap: 1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        img {
+          width: 50%;
+          transition: transform 0.3s ease;
+        }
+
+        h4 {
+          color: var(--blue-dark);
+          font-weight: 600;
+        }
+      }
+
+      // ====== GRUPO 1 ======
+      .group-tech-01 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3.125rem;
+
+        @include media.sm {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+
+        .box-tech {
+          width: 250px;
+          height: 250px;
+          border: 1px solid var(--blue-dark);
+
+          @include media.sm {
+            width: 150px;
+            height: 150px;
+          }
+
+          &:hover {
+            transform: translateY(-6px);
+            background: var(--white);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+          }
+
+          &:hover img {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      // ====== GRUPO 2 ======
+      .group-tech-02 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3.125rem;
+
+         @include media.md {
+          gap: 2rem;
+        }
+
+        @include media.sm {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+
+        .box-tech {
+          width: 150px;
+          height: 150px;
+          border: 2px solid transparent;
+          background: var(--white);
+          position: relative;
+          overflow: hidden;
+
+          @include media.sm {
+            width: 120px;
+            height: 120px;
+          }
+
+          &:hover {
+            border-color: var(--blue-dark);
+            transform: scale(1.05);
+          }
+
+          &:hover img {
+            transform: scale(1.1);
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            border: 2px solid var(--blue-dark);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+          }
+
+          &:hover::before {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

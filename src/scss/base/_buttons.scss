@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as vars;
+
+// Mixin para botón principal
+@mixin btn-primary {
+  background: var(--red);
+  color: var(--white);
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--red-dark);
+  }
+}

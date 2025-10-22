@@ -1,0 +1,134 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+@use "../abstracts/media" as media;
+
+@mixin benefits_home {
+  .benefits {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+
+    @include media.sm-md {
+      gap: 2rem;
+    }
+
+    h3 {
+      color: var(--blue-dark);
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      color: var(--blue-dark);
+    }
+
+    .box-benefits {
+      display: grid;
+      grid-template-columns: auto 320px;
+      gap: 3.125rem;
+
+      @include media.sm {
+        grid-template-columns: 1fr;
+      }
+
+      @include media.sm-md {
+        gap: 2rem;
+        align-items: start;
+      }
+
+      @include media.md {
+        .phone {
+          position: sticky;
+          top: 100px;
+          align-self: start;
+        }
+      }
+
+      .column-info {
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+
+        @include media.sm-md {
+          gap: 2rem;
+        }
+      }
+
+      & .benefits-01 {
+        display: flex;
+        gap: 3.125rem;
+
+
+        @include media.sm-md {
+          gap: 2rem;
+          flex-direction: column;
+          align-items: center;
+        }
+
+
+        & .info-txt {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.25rem;
+
+          @include media.sm-md {
+            text-align: center;
+          }
+
+          & h3 {
+            color: var(--red);
+          }
+
+          ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            @include media.sm-md {
+              gap: 0.313rem;
+            }
+
+            & li {
+              line-height: 1.8rem;
+
+              &::before {
+                content: "✓ ";
+              }
+            }
+
+          }
+        }
+
+        img {
+          width: 20%;
+
+          @include media.sm {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .carrusel {
+        display: flex;
+        gap: 3.125rem;
+
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+
+
+  }
+}

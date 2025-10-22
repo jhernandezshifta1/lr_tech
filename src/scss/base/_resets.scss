@@ -1,0 +1,28 @@
+@use "../abstracts/media" as media;
+
+/* Comodín que formatea estilos del sitio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Propiedades content */
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  @include media.md {
+    padding: 0 1.25rem;
+  }
+
+  @include media.sm {
+    padding: 0 1.25rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}

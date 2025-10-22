@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as vars;
+
+// Mixin para botón principal
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}

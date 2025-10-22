@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+@use "../abstracts/media" as media;
+@use "../base/resets" as rts;
+
+@mixin opening_home {
+  .opening {
+    background-color: var(--blue-dark);
+    background-image: url("/src/assets/images/pattern.png");
+    color: var(--white);
+    text-align: center;
+    padding-top: 12rem;
+    height: 680px;
+    margin-bottom: 18rem;
+
+    @include media.md {
+      padding: 10rem 1.25rem 0;
+      padding-top: 10rem;
+      height: 480px;
+    }
+
+    @include media.sm {
+      padding: 10rem 1.25rem 0;
+      height: 470px;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    & .opening-info {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+    }
+
+    & .brands {
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      padding-top: 3.125rem;
+      justify-content: space-between;
+
+      @include media.sm {
+        grid-template-columns: repeat(3, auto);
+        padding-top: 2rem;
+        gap: 1rem;
+        justify-items: center;
+
+      }
+
+      @include media.md {
+        align-items: center;
+
+      }
+
+      img {
+        width: auto;
+
+        @include media.md {
+          width: 60%;
+        }
+
+        @include media.sm {
+          height: 50%;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

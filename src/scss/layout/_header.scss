@@ -1,0 +1,205 @@
+@use "../abstracts/variables" as vars;
+@use "../base/mixins" as mix; // importa otros mixins generales
+@use "../base/buttons" as btns; // importa mixins de botones
+@use "../abstracts/media" as media;
+
+@mixin header_home {
+  header {
+    background: var(--white);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1500px;
+    margin: 50px auto 0;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0.188rem 1.25rem #ababab;
+    transition: all 0.3s ease;
+
+    @include media.sm-md{
+      width: 100%;
+      transform: none;
+      left: 0%;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 70px;
+      padding: 0 1.5rem;
+
+      .logo img {
+        width: 80px;
+      }
+
+      /* MENÚ PRINCIPAL */
+      .main-menu {
+        ul {
+          display: flex;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          gap: 3.125rem;
+
+          li a {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: var(--blue-light);
+            }
+          }
+
+          & .btn-primary {
+            display: none;
+          }
+        }
+
+        .mobile-btn {
+          display: none;
+        }
+      }
+
+      .btn-nav,
+      .mobile-btn {
+        display: flex;
+        gap: 1.25rem;
+        align-items: center;
+        z-index: 10000;
+
+        .language {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .material-symbols-outlined {
+            color: var(--blue-light);
+            font-size: 30px;
+          }
+
+          .btn-language {
+            border: 1px solid var(--gray-dark);
+            background: var(--white);
+            text-transform: uppercase;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            display: flex;
+            overflow: hidden;
+            padding: 0;
+
+            span {
+              padding: 8px 10px;
+            }
+
+            .btn-es {
+              background: var(--gray-dark);
+              color: var(--blue-dark);
+            }
+          }
+        }
+
+        & a {
+          text-decoration: none;
+          @include btns.btn-primary;
+        }
+      }
+
+      /* BOTÓN HAMBURGUESA */
+      .menu-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: none;
+
+        .material-symbols-outlined {
+          font-size: 2rem;
+          color: var(--blue-light);
+        }
+      }
+    }
+
+    /* ======== mobile ======== */
+    @include media.sm-md {
+      .menu {
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        .menu-toggle {
+          display: block;
+        }
+
+        .btn-nav {
+          @include mix.flex-center;
+        }
+
+        .main-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: var(--white);
+          border-radius: 0 0 20px 20px;
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          transition: all 0.4s ease;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          padding: 1.5rem 0;
+
+          ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+
+            li {
+              z-index: 10000;
+
+              & .btn-primary {
+                text-decoration: none;
+                @include btns.btn-primary;
+              }
+
+            }
+          }
+
+          .mobile-btn {
+            display: block;
+          }
+
+          &.open {
+            max-height: 500px;
+            opacity: 1;
+          }
+        }
+
+        .btn-nav {
+          .btn-desk {
+            display: none;
+          }
+        }
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        border-radius: 50px;
+        z-index: 999;
+
+        &.active {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+  }
+}
