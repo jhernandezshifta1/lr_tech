@@ -1,3 +1,9 @@
+<script setup>
+import { useI18n } from '../composables/useLanguage.js'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <footer>
     <div class="f-info container">
@@ -7,7 +13,7 @@
       <div class="address"><a
           href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003">Carrera
           13A # 37 - 32, Bogotá - Colombia</a></div>
-      <span>© 2025, Editorial La República S.A.S. Todos los derechos reservados.</span>
+      <span>{{ t.footer.rights }}</span>
 
     </div>
   </footer>

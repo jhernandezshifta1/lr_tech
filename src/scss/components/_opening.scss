@@ -14,13 +14,13 @@
     margin-bottom: 18rem;
 
     @include media.md {
-      padding: 10rem 1.25rem 0;
+      padding: 8rem 1.25rem 0;
       padding-top: 10rem;
       height: 480px;
     }
 
     @include media.sm {
-      padding: 10rem 1.25rem 0;
+      padding: 8rem 1.25rem 0;
       height: 470px;
 
       h1 {

@@ -64,6 +64,10 @@ onMounted(async () => {
     console.error('Error al cargar mensajes:', err)
   }
 })
+// Idioma
+import { useI18n } from '../composables/useLanguage.js'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -72,38 +76,25 @@ onMounted(async () => {
       <form @submit.prevent="handleSubmit" class="inspiration-form">
         <h2>Contáctenos </h2>
         <!-- Nombre -->
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">{{ t.contact.name }}</label>
         <input type="text" v-model="name" name="nombre" placeholder="Pepito Perez" required>
 
         <!-- Email -->
-        <label for="email">Email:</label>
+        <label for="email">{{ t.contact.email }}</label>
         <input type="email" v-model="email" name="email" placeholder="john@email.com" required>
 
         <!-- Número -->
-        <label for="numero">Número:</label>
+        <label for="numero">{{ t.contact.number }}</label>
         <input type="tel" v-model="number" name="numero" placeholder="543210987" required>
 
         <!-- Mensaje -->
-        <label for="mensaje">Mensaje:</label>
-        <textarea v-model="comment" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        <label for="mensaje">{{ t.contact.message }}</label>
+        <textarea v-model="comment" name="mensaje" placeholder="" rows="5" required></textarea>
 
         <!-- Botón -->
-        <button type="submit" class="button">Enviar</button>
+        <button type="submit" class="button">{{ t.contact.send }}</button>
       </form>
-      <img src="../assets/images/contact-image.png" alt="contact-image">
-    </div>
-
-    <div v-if="messages.length">
-      <h3>Mensajes enviados</h3>
-      <ul>
-        <li v-for="(msg, index) in messages" :key="msg.id">
-          <strong>{{ msg.name }}</strong> ({{ msg.email }}) ({{ msg.number }})
-          <br />
-          {{ msg.comment }}
-          <br />
-          <small>{{ msg.date }}</small>
-        </li>
-      </ul>
+      <img src="../assets/images/contact-image.png" alt="contact-image" loading="lazy">
     </div>
   </section>
 </template>

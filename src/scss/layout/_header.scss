@@ -17,7 +17,8 @@
     box-shadow: 0 0.188rem 1.25rem #ababab;
     transition: all 0.3s ease;
 
-    @include media.sm-md{
+    @include media.sm-md {
+      margin: 10px auto 0;
       width: 100%;
       transform: none;
       left: 0%;
@@ -32,6 +33,10 @@
 
       .logo img {
         width: 80px;
+
+        @include media.sm-md {
+          width: 60px;
+        }
       }
 
       /* MENÚ PRINCIPAL */
@@ -77,29 +82,22 @@
           align-items: center;
           gap: 10px;
 
-          .material-symbols-outlined {
-            color: var(--blue-light);
-            font-size: 30px;
-          }
-
           .btn-language {
             border: 1px solid var(--gray-dark);
             background: var(--white);
-            text-transform: uppercase;
             border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 800;
             display: flex;
             overflow: hidden;
-            padding: 0;
+            cursor: pointer;
 
             span {
-              padding: 8px 10px;
+              padding: 8px 12px;
+              transition: background 0.3s;
             }
 
-            .btn-es {
-              background: var(--gray-dark);
-              color: var(--blue-dark);
+            .active {
+              background: var(--blue-dark);
+              color: var(--white);
             }
           }
         }

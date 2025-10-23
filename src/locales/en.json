@@ -1,23 +1,96 @@
 {
   "header": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "contact": "Contact"
+    "who": "¿Who we are?",
+    "products": "Products",
+    "benefits": "Benefits",
+    "customers": "Clients",
+    "technologies": "Technologies",
+    "contact": "Contact us"
   },
   "opening": {
     "title": "Digital transformation is not the future it’s the present.",
-    "paragraph": "Join LR TECH and gain access to tools, knowledge, and technology services that will take your company to the next level."
+    "paragraph": "Join LR TECH and gain access to tools, knowledge, and technological services that will take your company to the next level."
   },
   "team": {
-    "title": "What is the team",
-    "paragraph": "Join LR TECH and access tools, knowledge, and technological services that will take your business to the next level."
+    "title": "What is the",
+    "lr": "LR TECH team?",
+    "paragraph": "It was created in 2017 with the goal of providing solutions for companies that need a robust, scalable, and highly available platform aligned with the latest standards for informational websites.",
+    "team": "¿Diario La República",
+    "text": "It is the country’s first economic newspaper, specializing in economic, financial, and business information, both local and international. This media group includes several business units, among them LR TECH, which offers products and services to companies.",
+    "button": "VIEW BENEFITS"
   },
-  "team-box": {
-    "title": "Diario La República",
-    "paragraph": "Es el primer diario económico del país, especializado en información económica, financiera y empresarial, con información local e internacional. <br>Este medio agrupa varias unidades de negocio entre estos LR TECH, que ofrecen productos y servicios a empresas."
+  "products": {
+    "title": "Products",
+    "paragraph": "LR Tech, we bring together the tools you need to take your business to the next level.",
+    "monetization": "Digital Monetization",
+    "monetization1": "Increased revenue through programmatic advertising.",
+    "monetization2": "Sustainable business models with subscriptions.",
+    "monetization3": "Advertising inventory management.",
+    "support": "Strategic Support and Consulting",
+    "support1": "Continuous updates with new best practices.",
+    "support2": "Expert team always available.",
+    "support3": "Tailored solutions for each client.",
+    "infrastructure": "Infrastructure and Scalability",
+    "infrastructure1": "Stability during high-impact events.",
+    "infrastructure2": "Lower latency and minimal downtime.",
+    "infrastructure3": "A platform ready to grow with your business.",
+    "productivity": "Newsroom Productivity",
+    "productivity1": "Dashboards for supervisors and editorial teams.",
+    "productivity2": "Performance indicators: daily articles, reviews, and publication times.",
+    "productivity3": "VPN, servers, data backup, and secure access."
+  },
+  "benefits": {
+    "title": "Benefits",
+    "paragraph": "Conoce los beneficios que hacen de nuestra tecnología un aliado estratégico para alcanzar tus metas.",
+    "content": "Digital Content Management (Headless CMS)",
+    "content1": "Efficient editorial workflows.",
+    "content2": "Faster publishing times.",
+    "content3": "Scalability for large volumes of information.",
+    "optimization": "Web Performance Optimization",
+    "optimization1": "Fast loading on any device.",
+    "optimization2": "Superior user experience.",
+    "optimization3": "Better search engine ranking.",
+    "seo": "Advanced Technical SEO",
+    "seo1": "Increased organic traffic.",
+    "seo2": "Friendly URLs and automatic meta tags.",
+    "seo3": "mproved visibility index on Google.",
+    "projects": "Projects",
+    "projects1": "Discover our projects and see how we can build the next one with you."
+  },
+    "customers": {
+    "title": "Clients",
+    "paragraph": "Each project is a story of innovation and growth.",
+    "paragraph2": "We invite you to explore the clients who are part of LR Tech and be inspired by the results we've achieved together.",
+    "testimonials": "Testimonials",
+    "text": "Trust is built through results. Discover the testimonials of the companies that have transformed their digital presence.",
+    "testimonial1": "Having the support of La República means adding the broadest digital development experience to our strategy for building audiences. It means having a top-level team that understands technology as a tool that adapts to achieve the impact our organization seeks.",
+    "name1": "Mauricio Aragón",
+    "role1": "Digital Director, NTN24",
+    "testimonial2": "LR Tech has been an important and strategic ally in the evolution of our projects, providing us with their full technological expertise and support to help us achieve our goals of building valuable audiences across our digital platforms, as well as generating sustainable revenue through a stable tool that follows the industry’s best practices.",
+    "name2": "Lucero Martínez",
+    "role2": "Digital Manager, CANAL RCN (SUPERLIKE - NOTICIAS RCN)",
+    "testimonial3": "We made a strategic change by migrating our website with LR, an ally that provides exceptional service. This decision has allowed us to optimize performance, improve key metrics, and drive growth. The results reflect a more efficient digital ecosystem and a better experience for our audience.",
+    "name3": "Leonardo González",
+    "role3": "Digital Vice President, WINSPORTS",
+    "testimonial4": "With the team at La República, we have strengthened our website thanks to their knowledge, support, and strategic guidance. We enhanced our digital presence through their expertise and deep understanding of media digital assets, providing valuable direction to our content, commercial, and marketing teams.",
+    "name4": "Carlos Fernando Vega",
+    "role4": "Magazine Director P&M"
+  },
+    "technologies": {
+    "title": "Technologies",
+    "paragraph": "Innovation begins with the right technology.",
+    "paragraph2": "Discover the solutions we use to create digital experiences that make a difference."
+  },
+    "contact": {
+    "title": "Contact us",
+    "name": "name",
+    "email": "E-mail",
+    "number": "Number",
+    "message": "Message",
+    "messageinfo": "Type your message here...",
+    "send": "Send"
   },
   "footer": {
-    "rights": "All rights reserved."
+    "rights": "2025, Editorial La República S.A.S. All rights reserved."
   }
 }

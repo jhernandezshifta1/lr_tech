@@ -1,19 +1,96 @@
 {
   "header": {
-    "home": "Inicio",
-    "about": "Nosotros",
-    "services": "Servicios",
-    "contact": "Contacto"
+    "who": "¿Quienes somos?",
+    "products": "Productos",
+    "benefits": "Beneficios",
+    "customers": "Clientes",
+    "technologies": "Tecnologías",
+    "contact": "Contáctecnos"
   },
   "opening": {
     "title": "La transformación digital no es el futuro, es el presente.",
-    "paragraph": "Fue creado en el 2017 con el objetivo de mostrar soluciones a aquellas empresas que quieren una plataforma robusta, escalable y de alta disponibilidad, alineada con los últimos estándares para sitios informativos."
+    "paragraph": "Únete a LR TECH y accede a herramientas, conocimiento y servicios tecnológicos que llevarán a tu empresa al siguiente nivel."
   },
   "team": {
     "title": "¿Qué es el equipo",
-    "paragraph": "Únete a LR TECH y accede a herramientas, conocimiento y servicios tecnológicos que llevarán a tu empresa al siguiente nivel."
+    "lr": "LR TECH?",
+    "paragraph": "Fue creado en el 2017 con el objetivo de mostrar soluciones a aquellas empresas que quieren una plataforma robusta, escalable y de alta disponibilidad, alineada con los últimos estándares para sitios informativos.",
+    "team": "¿Diario La República",
+    "text": "Es el primer diario económico del país, especializado en información económica, financiera y empresarial, con información local e internacional. Este medio agrupa varias unidades de negocio entre estos LR TECH, que ofrecen productos y servicios a empresas.",
+    "button": "CONOCER BENEFICIOS"
+  },
+   "products": {
+    "title": "Productos",
+    "paragraph": "En LR Tech reunimos las herramientas que necesitas para llevar tu negocio al siguiente nivel.",
+    "monetization": "Monetización Digital",
+    "monetization1": "Aumento de ingresos por publicidad programática.",
+    "monetization2": "Modelos de negocio sostenibles con suscripciones.",
+    "monetization3": "AGestión de inventario publicitario.",
+    "support": "Soporte Estratégico y Consultoría",
+    "support1": "Actualizaciones continuas con nuevas prácticas.",
+    "support2": "Equipo experto siempre disponible.",
+    "support3": "Soluciones adaptadas a cada cliente.",
+    "infrastructure": "Infraestructura y escalabilidad",
+    "infrastructure1": "Estabilidad en eventos de alto impacto.",
+    "infrastructure2": "Menor latencia y caídas mínimas.",
+    "infrastructure3": "Plataforma lista para crecer con el negocio.",
+    "productivity": "Productividad de la sala de redacción",
+    "productivity1": "Tableros de control para supervisores/editorial.",
+    "productivity2": "Indicadores de rendimiento: artículos diarios, revisiones, tiempos de publicación.",
+    "productivity3": "VPN, servidores, respaldo de datos, acceso seguro."
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "paragraph": "Conoce los beneficios que hacen de nuestra tecnología un aliado estratégico para alcanzar tus metas.",
+    "content": "Gestión de Contenido Digital (CMS Headless)",
+    "content1": "Flujos editoriales eficientes.",
+    "content2": "Mayor rapidez en la publicación.",
+    "content3": "SEscalabilidad para grandes volúmenes de información.",
+    "optimization": "Optimización de Rendimiento Web",
+    "optimization1": "Cargas rápidas en cualquier dispositivo.",
+    "optimization2": "Experiencia de usuario superior.",
+    "optimization3": "Mejor posicionamiento en buscadores.",
+    "seo": "SEO Técnico Avanzado",
+    "seo1": "Mayor tráfico orgánico.",
+    "seo2": "URLs amigables y metaetiquetas automáticas.",
+    "seo3": "Mejor índice de visibilidad en Google.",
+    "projects": "Proyectos",
+    "projects1": "Conoce nuestros proyectos y descubre cómo podemos construir el próximo contigo."
+  },
+    "customers": {
+    "title": "Clientes",
+    "paragraph": "Cada proyecto es una historia de innovación y crecimiento.",
+    "paragraph2": "Lo invitamos a explorar los clientes que hacen parte de LR Tech y a inspirarte con los resultados que hemos logrado juntos.",
+    "testimonials": "Testimonios",
+    "text": "La confianza se construye con resultados. Conoce los testimonios de las empresas que han transformado su presencia digital.",
+    "testimonial1": "Tener el apoyo de La República es sumar a nuestra estrategia la más amplia experiencia en desarrollo digital para la construcción de audiencias. Es contar con un equipo del más alto nivel, que entiende la tecnología como una herramienta que se adapta para lograr el impacto que busca nuestra organización.",
+    "name1": "Mauricio Aragón",
+    "role1": "Director digital NTN24",
+    "testimonial2": "LR Tech ha sido un aliado importante y estratégico en la evolución de nuestros proyectos, quienes nos han aportado toda su experiencia y acompañamiento tecnológico en pro de nuestros objetivos de construir audiencias de valor en nuestros activos digitales, así como en la generación de ingresos sostenibles a través de una herramienta estable y con las mejores prácticas de la industria.",
+    "name2": "Lucero Martinez",
+    "role2": "Gerente digital de CANAL RCN (SUPERLIKE - NOTICIAS RCN)",
+    "testimonial3": "Hicimos un cambio estratégico al migrar nuestra página con LR, un aliado con un servicio excepcional. Esta decisión nos ha permitido optimizar el rendimiento, mejorar los indicadores y potenciar el crecimiento. Los resultados reflejan un ecosistema digital más eficiente y una mejor experiencia para nuestra audiencia.",
+    "name3": "Leonardo González",
+    "role3": "Vicepresidente digital de WINSPORTS",
+    "testimonial4": "Con el equipo de La República, hemos logrado fortalecer nuestro portal web gracias a su conocimiento, soporte y asesoría estratégica. Mejoramos nuestra presencia digital, gracias a su experiencia y entendimiento de los activos digitales de los medios de comunicación, orientando a nuestro equipo de contenidos, comercial y de mercadeo.",
+    "name4": "Carlos Fernando Vega",
+    "role4": "Director Revista P&M"
+  },
+    "technologies": {
+    "title": "Tecnologías",
+    "paragraph": "La innovación comienza con la tecnología adecuada.",
+    "paragraph2": "Descubre las soluciones que utilizamos para crear experiencias digitales que marcan la diferencia."
+  },
+    "contact": {
+    "title": "Contáctenos",
+    "name": "Nombre",
+    "email": "E-mail",
+    "number": "Número",
+    "message": "Mensaje",
+    "messageinfo": "Escribe tú mensaje aqui...",
+    "send": "Enviar"
   },
   "footer": {
-    "rights": "Todos los derechos reservados."
+   "rights": "2025, Editorial La República S.A.S. Todos los derechos reservados."
   }
 }

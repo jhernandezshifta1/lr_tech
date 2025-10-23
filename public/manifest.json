@@ -1,0 +1,22 @@
+{
+  "name": "LR-TECH portafolio",
+  "short_name": "Lr-tech",
+  "description": "Un portafolio de servicios de un equipo tecnólogico",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#42b883",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/lr-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/lr-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

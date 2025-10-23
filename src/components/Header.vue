@@ -32,12 +32,11 @@ function closeMenu() {
       <!-- MENÚ PRINCIPAL -->
       <nav class="main-menu" :class="{ open: isMenuOpen }">
         <ul>
-          <li><a href="#section1">Quiénes somos</a></li>
-          <li><a href="#section2">Productos</a></li>
-          <li><a href="#section3">Beneficios</a></li>
-          <li><a href="#section4">Clientes</a></li>
-          <li><a href="#section5">Tecnologías</a></li>
-          <li><a href="#section6" class="btn-primary">CONTÁCTENOS</a></li>
+          <li><a href="#section1">{{ t.header.who }}</a></li>
+          <li><a href="#section2">{{ t.header.products }}</a></li>
+          <li><a href="#section3">{{ t.header.benefits }}</a></li>
+          <li><a href="#section4">{{ t.header.customers }}</a></li>
+          <li><a href="#section5">{{ t.header.technologies }}</a></li>
         </ul>
       </nav>
 
@@ -51,7 +50,7 @@ function closeMenu() {
           </button>
         </div>
 
-        <a href="#section6" class="btn-primary btn-desk">CONTÁCTENOS</a>
+        <a href="#section6" class="btn-primary btn-desk">{{ t.header.contact }}</a>
       </div>
       <!-- BOTÓN HAMBURGUESA (solo móvil) -->
       <button class="menu-toggle" @click="toggleMenu">
@@ -66,30 +65,3 @@ function closeMenu() {
     <div class="overlay" :class="{ active: isMenuOpen }" @click="closeMenu"></div>
   </header>
 </template>
-
-<style scoped lang="scss">
-.language {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  .btn-language {
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius: 50px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-
-    span {
-      padding: 8px 12px;
-      transition: background 0.3s;
-    }
-
-    .active {
-      background: #222;
-      color: #fff;
-    }
-  }
-}
-</style>

@@ -1,89 +1,76 @@
+<script setup>
+import { useI18n } from '../composables/useLanguage.js'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="section4" class="customers">
     <div class="container customers-info">
       <div>
-        <h2>Clientes</h2>
-        <p>Cada proyecto es una historia de innovación y crecimiento.</p>
-        <p>Lo invitamos a explorar los clientes que hacen parte de LR Tech y a inspirarte con los resultados que hemos
-          logrado juntos.</p>
+        <h2>{{ t.customers.title }}</h2>
+        <p>{{ t.customers.paragraph }}</p>
+        <p>{{ t.customers.paragraph2 }}</p>
       </div>
       <div class="b-customers">
-        <div class="box-customers"><img src="../assets/images/CC.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/rcn.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/ntn.png" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/win.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/lafm.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/lr.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/alerta.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/antena.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/periodicos.png" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/agronegocios.png" alt=""></div>
+        <div class="box-customers"><img src="../assets/images/CC.svg" alt="cc"></div>
+        <div class="box-customers"><img src="../assets/images/rcn.svg" alt="rcn"></div>
+        <div class="box-customers"><img src="../assets/images/ntn.png" alt="ntn"></div>
+        <div class="box-customers"><img src="../assets/images/win.svg" alt="win"></div>
+        <div class="box-customers"><img src="../assets/images/lafm.svg" alt="lafm"></div>
+        <div class="box-customers"><img src="../assets/images/lr.svg" alt="lr"></div>
+        <div class="box-customers"><img src="../assets/images/alerta.svg" alt="alerta"></div>
+        <div class="box-customers"><img src="../assets/images/antena.svg" alt="antena"></div>
+        <div class="box-customers"><img src="../assets/images/periodicos.png" alt="periodicos"></div>
+        <div class="box-customers"><img src="../assets/images/agronegocios.png" alt="agronegocios"></div>
         <div></div>
-        <div class="box-customers"><img src="../assets/images/AL.svg" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/pym.png" alt=""></div>
-        <div class="box-customers"><img src="../assets/images/LogoSL.svg" alt=""></div>
+        <div class="box-customers"><img src="../assets/images/AL.svg" alt="al"></div>
+        <div class="box-customers"><img src="../assets/images/pym.png" alt="pym"></div>
+        <div class="box-customers"><img src="../assets/images/LogoSL.svg" alt="logos-sl"></div>
         <div></div>
       </div>
       <div class="testimonials">
         <div class="text-t">
-          <h3>Testimonios</h3>
-          <p>La confianza se construye con resultados.</p>
-          <p>Conoce los testimonios de las empresas que han transformado su presencia digital.</p>
-
+          <h3>{{ t.customers.testimonials }}</h3>
+          <p>{{ t.customers.text }}</p>
         </div>
         <div class="box-t">
-          <div class="txt-box">"Tener el apoyo de La República es sumar a nuestra estrategia la más amplia experiencia
-            en desarrollo digital para la construcción de audiencias. Es contar con un equipo del más alto nivel, que
-            entiende la tecnología como una herramienta que se adapta para lograr el impacto que busca nuestra
-            organización."</div>
+          <div class="txt-box">"{{ t.customers.testimonial1 }}"</div>
           <div class="person">
-            <img src="../assets/images/cliente-01.png" alt="Mauricio Aragón">
+            <img src="../assets/images/cliente-01.png" alt="Mauricio Aragón" loading="lazy">
             <div>
-              <div class="name">Mauricio Aragón</div>
-              <div class="post">Director digital NTN24</div>
+              <div class="name">{{ t.customers.name1 }}</div>
+              <div class="post">{{ t.customers.role1 }}</div>
             </div>
           </div>
         </div>
         <div class="box-t">
-          <div class="txt-box">"LR Tech ha sido un aliado importante y estratégico en la evolución de nuestros
-            proyectos, quienes nos han aportado toda su experiencia y acompañamiento tecnológico en pro de nuestros
-            objetivos de
-            construir audiencias de valor en nuestros activos digitales, así como en la generación de ingresos
-            sostenibles a través de una herramienta estable y con las mejores prácticas de la industria.""</div>
+          <div class="txt-box">"{{ t.customers.testimonial2 }}"</div>
           <div class="person">
-            <img src="../assets/images/Cliente-03.png" alt="Lucero Martinez">
+            <img src="../assets/images/Cliente-03.png" alt="Lucero Martinez"loading="lazy">
             <div>
-              <div class="name">Lucero Martinez</div>
-              <div class="post">Gerente digital de CANAL RCN <br>(SUPERLIKE - NOTICIAS RCN)</div>
+              <div class="name">{{ t.customers.name2 }}</div>
+              <div class="post">{{ t.customers.role2 }}</div>
             </div>
           </div>
         </div>
         <div class="box-t">
-          <div class="txt-box">"Hicimos un cambio estratégico al migrar nuestra página con LR, un aliado con un
-            servicio excepcional. Esta decisión nos ha permitido optimizar el rendimiento, mejorar los indicadores y
-            potenciar
-            el crecimiento. Los resultados reflejan un ecosistema digital más eficiente y una mejor experiencia para
-            nuestra audiencia."</div>
+          <div class="txt-box">"{{ t.customers.testimonial3 }}"</div>
           <div class="person">
-            <img src="../assets/images/cliente02.png" alt="">
+            <img src="../assets/images/cliente02.png" alt="Leonardo González" loading="lazy">
             <div>
-              <div class="name">Leonardo Gonzalez</div>
-              <div class="post">Vicepresidente digital de WINSPORTS</div>
+              <div class="name">{{ t.customers.name3 }}</div>
+              <div class="post">{{ t.customers.name3 }}</div>
             </div>
           </div>
         </div>
         <div class="box-t">
-          <div class="txt-box">"Con el equipo de La República, hemos logrado fortalecer nuestro portal web gracias a
-            su
-            conocimiento, soporte y asesoría estratégica. Mejoramos nuestra presencia digital, gracias a su
-            experiencia
-            y entendimiento de los activos digitales de los medios de comunicación, orientando a nuestro equipo de
-            contenidos, comercial y de mercadeo."</div>
+          <div class="txt-box">"{{ t.customers.testimonial4 }}"</div>
           <div class="person">
-            <img src="../assets/images/Cliente-04png.png" alt="Carlos Fernando Vega">
+            <img src="../assets/images/Cliente-04png.png" alt="Carlos Fernando Vega" loading="lazy">
             <div>
-              <div class="name">Carlos Fernando Vega</div>
-              <div class="post">Director Revista P&M</div>
+              <div class="name">{{ t.customers.name4 }}</div>
+              <div class="post">{{ t.customers.name4 }}</div>
             </div>
           </div>
         </div>

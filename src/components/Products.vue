@@ -1,51 +1,57 @@
+<script setup>
+import { useI18n } from '../composables/useLanguage.js'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="section2" class="products">
     <div class="container products-info">
       <div>
-        <h2>Productos</h2>
-        <p>En LR Tech reunimos las herramientas que necesitas para llevar tu negocio al siguiente nivel.</p>
+        <h2>{{ t.products.title }}</h2>
+        <p>{{ t.products.paragraph }}</p>
       </div>
       <div class="product-01">
-        <img src="../assets/images/product-01.png" alt="Multiplataforma">
+        <img src="../assets/images/product-01.png" alt="Multiplataforma" loading="lazy">
         <div class="product-txt">
-          <h3>Monetización Digital</h3>
+          <h3>{{ t.products.monetization}}</h3>
           <ul>
-            <li>Aumento de ingresos por publicidad programática.</li>
-            <li>Modelos de negocio sostenibles con suscripciones.</li>
-            <li>Gestión de inventario publicitario.</li>
+            <li>{{ t.products.monetization1}}</li>
+            <li>{{ t.products.monetization2}}</li>
+            <li>{{ t.products.monetization3}}</li>
           </ul>
         </div>
       </div>
       <div class="product-01">
-        <img src="../assets/images/product-02.png" alt="Multiplataforma">
+        <img src="../assets/images/product-02.png" alt="Multiplataforma" loading="lazy">
         <div class="product-txt">
-          <h3>Soporte Estratégico y Consultoría</h3>
+          <h3>{{ t.products.support}}</h3>
           <ul>
-            <li>Actualizaciones continuas con nuevas prácticas.</li>
-            <li>Equipo experto siempre disponible.</li>
-            <li>Soluciones adaptadas a cada cliente.</li>
+            <li>{{ t.products.support1}}</li>
+            <li>{{ t.products.support2}}</li>
+            <li>{{ t.products.support3}}</li>
           </ul>
         </div>
       </div>
       <div class="product-01">
-        <img src="../assets/images/product-03.png" alt="Multiplataforma">
+        <img src="../assets/images/product-03.png" alt="Multiplataforma" loading="lazy">
         <div class="product-txt">
-          <h3>Infraestructura y escalabilidad</h3>
+          <h3>{{ t.products.infrastructure}}</h3>
           <ul>
-            <li>Estabilidad en eventos de alto impacto.</li>
-            <li>Menor latencia y caídas mínimas.</li>
-            <li>Plataforma lista para crecer con el negocio.</li>
+            <li>{{ t.products.infrastructure1}}</li>
+            <li>{{ t.products.infrastructure2}}</li>
+            <li>{{ t.products.infrastructure3}}</li>
           </ul>
         </div>
       </div>
       <div class="product-01">
-        <img src="../assets/images/product-04.png" alt="Multiplataforma">
+        <img src="../assets/images/product-04.png" alt="Multiplataforma" loading="lazy">
         <div class="product-txt">
-          <h3>Productividad de la sala de redacción</h3>
+          <h3>{{ t.products.productivity}}</h3>
           <ul>
-            <li>Tableros de control para supervisores/editorial.</li>
-            <li>Indicadores de rendimiento: artículos diarios, revisiones, tiempos de publicación.</li>
-            <li>VPN, servidores, respaldo de datos, acceso seguro.</li>
+            <li>{{ t.products.productivity1}}</li>
+            <li>{{ t.products.productivity2}}</li>
+            <li>{{ t.products.productivity3}}</li>
           </ul>
         </div>
       </div>
