@@ -66,6 +66,11 @@
           height: 250px;
           border: 1px solid var(--blue-dark);
 
+          @include media.lg {
+            width: 200px;
+            height: 200px;
+          }
+
           @include media.sm {
             width: 150px;
             height: 150px;

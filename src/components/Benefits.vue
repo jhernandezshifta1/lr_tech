@@ -9,7 +9,7 @@ import img2 from '../assets/images/superlike-carrusel.png'
 import img3 from '../assets/images/rcn-carrusel.png'
 import img4 from '../assets/images/ccc-carrusel.png'
 import img5 from '../assets/images/pyg-carrusel.png'
-import img6 from '../assets/images/win-mobile.png'
+import img6 from '../assets/images/win-carrusel.png'
 
 // arreglo de imágenes
 const images = [
@@ -22,9 +22,9 @@ const images = [
 ]
 
 const config = {
-  height: 500,
-  itemsToShow: 4,
-  gap: 10,
+  height: 600,
+  itemsToShow: 3,
+  gap: 0,
   autoplay: 3000,
   wrapAround: true,
   pauseAutoplayOnHover: true,
